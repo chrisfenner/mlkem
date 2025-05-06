@@ -1,8 +1,7 @@
 # mlkem
 Go bindings to https://github.com/pq-code-package/mlkem-native
 
-This project includes https://github.com/pq-code-package/mlkem-native as a
-submodule, whose
+This project vendors https://github.com/pq-code-package/mlkem-native, whose
 [license](https://github.com/pq-code-package/mlkem-native?tab=License-1-ov-file#readme)
 is a combination of Apache 2.0, ISC, and MIT. This project's [license](LICENSE)
 is regular Apache 2.0.
@@ -30,5 +29,5 @@ ss, ct, err := sk.PublicKey().Encapsulate(bytes.NewReader(randomness))
 go get github.com/chrisfenner/mlkem
 ```
 
-This package submodules https://github.com/pq-code-package/mlkem-native and
+This package vendors https://github.com/pq-code-package/mlkem-native and
 wraps it with cgo. [mlkem.go](mlkem.go) contains the main package API.
